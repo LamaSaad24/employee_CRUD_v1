@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision Java Script</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+   
+</head>
+<body>
+   <!-- <div class="form-group">
+    <input class="form-control" type="number" name="deductAmount" placeholder="Deduct Amount">
+</div>
+<div class="form-group">
+    <input class="form-control" type="number" name="salaryAfter" placeholder="Employee Salary After Deduct">
+</div> -->
+ <div class="container my-5">
+    <form >
+
+        <div class="form-group">
+           <input class="form-control" type="text" name="employName" placeholder="Employee Name"  id="employeeName">
+    
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="number" name="employAge" placeholder="Employee Age" id="employeeAge">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="email" name="employEmail" placeholder="Employee Email" id="employeeEmail">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="employAddress" placeholder="Employee Address" id="employeeAddress">
+        </div>
+        <div class="input-group my-3">
+            <input class="form-control" type="number" name="employSalary" placeholder="Employee  Salary" id="employeeSalary">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="genderFemale" value="female" name="employGender" >
+            <label class="form-check-label" for="gender">female</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="genderMale" value="male" name="employGender" >
+            <label class="form-check-label" for="gender">male</label>
+        </div>
+
+          <div class="my-3">
+            <button class="btn btn-success" type="submit" id="addBtn">Add Employee</button>
+        
+          </div>
+          <div class="form-group">
+            <input onkeyup="search(this.value);" class="form-control" type="text" name="Search By Name" placeholder="Search By Name" >
+        </div>
+           </form>
+ </div>
+
+ <div class="container py-5">
+  <table class=" table  table-striped table-bordered">
+      <thead class="thead-dark">
+          <th>#</th>
+          <th>Employee Name</th>
+          <th>Employee age</th>
+          <th>Employee Email</th>
+          <th>Employee Address</th>
+          <th>Employee Salary</th>
+          <th>Employee Gender</th>
+      </thead>
+      <tbody id="tableBody">
+    
+        
+      </tbody>
+  </table>
+ </div>
+ 
+ 
+ 
+ <script src="js/main.js"></script>
+</body>
+</html>
